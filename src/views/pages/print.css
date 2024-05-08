@@ -1,0 +1,100 @@
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-tabela{
+    height: 90vh;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 40px 0;
+    width: 700px;
+    border: 1px solid black;
+    position: relative;
+}
+
+h3{
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(140 140 140);
+    letter-spacing: 1px;
+}
+
+th {
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-right: none;
+    text-align: left;
+    color: black;
+    padding: 1px 0;
+    padding-left: 10px;
+    font-size: 16px;
+
+}
+th p {
+    float: left;
+    white-space: nowrap;
+}
+
+
+
+img {
+    width: 500px;
+    background-color: white;
+    /* transform: rotate(90deg); */
+}
+.centralizar{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.centralizar p{
+    width: 250px;
+    border-top: 1px solid black;
+}
+
+.data{
+    position: absolute;
+    bottom: 75px;
+    left:20px;
+    font-size: 20px;
+}
+.centralizar-endereco{
+    position: absolute;
+    bottom: 10px;
+    border-top: 1px solid black;
+    left: 50%;
+    transform: translate(-50%);
+    width: 680px;
+    padding-top: 8px;
+   
+
+}
+.endereco-semasc{
+    font-size: 14px;
+    color: gray;
+}
+
+.containerTH> :not(:first-child){
+    color: rgb(66, 66, 66);
+    font-weight: normal;
+}   
+
+.containerTH{
+    display: flex;
+    gap: 4px;
+    padding: 6px 0;
+}

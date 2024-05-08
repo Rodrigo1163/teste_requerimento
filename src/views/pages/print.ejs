@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <body>
+        <div class="container-tabela">
+
+            <img src="<%= imageSrc %>" alt="Foto de Perfil">
+            <h3>DADOS DO REQUERENTE</h3>
+            <div>
+                <table>
+                    <tr>
+                        <th>
+                            <div class="containerTH">
+                                <p>Nome: </p> 
+                                <p><%= nome %></p>
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="containerTH">
+                                <p>Data de Nascimento:</p> 
+                                <p><%= data_nasc %></p>
+
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <div class="containerTH">
+                                <p>Naturalidade:</p> 
+                                <p><%=naturalidade %></p>
+
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="containerTH">
+                                <p>Estado Civil:</p>  
+                                <p><%= estado_civil %></p>
+
+                            </div>
+                        </th>
+    
+                    </tr>
+        
+                    <tr>
+                        <th>
+                            <div class="containerTH">
+                                <p>RG:</p>
+                                <p><%= identidade %></p>
+
+                            </div>
+                            
+                        </th>
+                        <th>
+                            <div class="containerTH">
+                                <p>CPF:</p>
+                                <p><%= cpf %></p>
+
+                            </div>
+                            
+                        </th>
+                    </tr>
+                        
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <div class="containerTH">
+                                <p>Endereço:</p>
+                                <p><%= endereço %></p>
+
+                            </div>
+                             
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <div class="containerTH">
+                                <p>Telefone:</p>
+                                <p><%= telefone %></p>
+
+                            </div>
+                             
+                        </th>
+                    </tr>
+                    
+                    <tr>
+                        
+                            <th>
+                                <div class="containerTH">
+                                    <p>CEP:</p>
+                                    <p><%= cep %></p>
+    
+                                </div>
+                                 
+                            </th>
+
+                        <th>
+                            <div class="containerTH">
+                                <p>Bairro:</p>
+                                <p><%= bairro %></p>
+
+                            </div>
+                             
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <div class="containerTH">
+                                <p>Matrícula:</p>
+                                <p><%= matricula %></p>
+
+                            </div>
+                             
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <div class="containerTH">
+                                <p>Cargo:</p>
+                                <p><%= cargo %></p>
+
+                            </div>
+                             
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="containerTH">
+                                <p>Lotação:</p>
+                                <p><%= lotacao %></p>
+
+                            </div>
+                             
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <p>Venho respeitosamente, por meio deste documento, requerer o que se segue: </p>
+                            <p><%= dados_requerimento %></p>
+                        </th>
+                    </tr>
+        
+        
+        
+                </table>
+            </div>
+    
+            <p class="data">Data: 18/06/2002</p>
+    
+            <div class="centralizar">
+                <p>assinatura do requerente</p>
+            </div>
+            <div class="centralizar-endereco">
+                <p class="endereco-semasc">Av. Ayrão, esquina c/ Rua Ferreira Pena, s/n. – Centro – CEP 69025005 – Fone 3215-2322/3885</p>
+    
+            </div>
+        </div>
+    </body>
+
+
+    <style>
+            * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-tabela{
+    height: 90vh;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 40px 0;
+    width: 700px;
+    border: 1px solid black;
+    position: relative;
+}
+
+h3{
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(140 140 140);
+    letter-spacing: 1px;
+}
+
+th {
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-right: none;
+    text-align: left;
+    color: black;
+    padding: 1px 0;
+    padding-left: 10px;
+    font-size: 16px;
+
+}
+th p {
+    float: left;
+    white-space: nowrap;
+}
+
+
+
+img {
+    width: 500px;
+    background-color: white;
+    /* transform: rotate(90deg); */
+}
+.centralizar{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.centralizar p{
+    width: 250px;
+    border-top: 1px solid black;
+}
+
+.data{
+    position: absolute;
+    bottom: 75px;
+    left:20px;
+    font-size: 20px;
+}
+.centralizar-endereco{
+    position: absolute;
+    bottom: 10px;
+    border-top: 1px solid black;
+    left: 50%;
+    transform: translate(-50%);
+    width: 680px;
+    padding-top: 8px;
+   
+
+}
+.endereco-semasc{
+    font-size: 14px;
+    color: gray;
+}
+
+.containerTH> :not(:first-child){
+    color: rgb(66, 66, 66);
+    font-weight: normal;
+}   
+
+.containerTH{
+    display: flex;
+    gap: 4px;
+    padding: 6px 0;
+}
+
+    </style>
+
+
+</html>
