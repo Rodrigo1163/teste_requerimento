@@ -1,4 +1,4 @@
-export default function submitForm () {
+export default function submitForm (form) {
     const formData = new FormData(form);
     const formDataJson = {}; 
     formData.forEach((value, key) => {
